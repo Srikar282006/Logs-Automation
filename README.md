@@ -60,7 +60,7 @@ flowchart TD
     style H stroke-width:2px
 
 
-### 📁 Project Structure
+ 📁 Project Structure
 Log_Analyser/
 │
 ├── agents/
