@@ -5,7 +5,7 @@ root = Path("/mnt/data/Logs-Automation-README")
 root.mkdir(parents=True, exist_ok=True)
 (root / "docs").mkdir(exist_ok=True)
 
-readme = r'''# ⚡ EV Network Intelligence — Log Automation
+readme = r''' ⚡ EV Network Intelligence — Log Automation
 
 > An agentic AI system for monitoring EV charging logs, detecting charging failures, analyzing incidents with an LLM, notifying the charger owner, and generating automated daily operational summaries.
 
