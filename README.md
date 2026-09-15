@@ -25,7 +25,6 @@ The architecture is intentionally designed so that the current Excel-based proto
 
 ### High-level architecture
 
-![EV Network Intelligence Architecture](docs/architecture.png)
 
 ```mermaid
 flowchart TD
