@@ -1,0 +1,7 @@
+        TODO LIST
+
+1) Every Error Log must be mailed - Based on Seriousness - Done
+2) Should Be schedule the logs summary at 12:00AM Everyday - Done
+3) Need to create the log file everyday with date- Cancelled Idea
+
+Status:- Completed

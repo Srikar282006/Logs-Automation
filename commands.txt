@@ -1,0 +1,7 @@
+step-1 : uv init
+
+step 2 :-
+Activate with: .venv\Scripts\activate
+
+step 3:
+uv run uvicorn main:app --reload
