@@ -1,11 +1,4 @@
-from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont
-
-root = Path("/mnt/data/Logs-Automation-README")
-root.mkdir(parents=True, exist_ok=True)
-(root / "docs").mkdir(exist_ok=True)
-
-readme = r''' ⚡ EV Network Intelligence — Log Automation
+# ⚡ EV Network Intelligence — Log Automation
 
 > An agentic AI system for monitoring EV charging logs, detecting charging failures, analyzing incidents with an LLM, notifying the charger owner, and generating automated daily operational summaries.
 
@@ -54,10 +47,6 @@ flowchart TD
     D --> K["12:00 AM Scheduler"]
     K --> L["Daily Summary Agent"]
     L --> M["Daily Email"]
-
-    style E stroke-width:3px
-    style F stroke-width:2px
-    style H stroke-width:2px
 
 
  📁 Project Structure
@@ -112,12 +101,7 @@ uv venv
 ```bash
 .venv\Scripts\activate
 
-### 4. Activate the virtual environment
-
-```bash
-.venv\Scripts\activate
-
-### 5. Installing packages
+### 4. Installing packages
 
 ```bash
 pip install -r requirements.txt
