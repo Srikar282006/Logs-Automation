@@ -58,3 +58,79 @@ flowchart TD
     style E stroke-width:3px
     style F stroke-width:2px
     style H stroke-width:2px
+
+
+### 📁 Project Structure
+Log_Analyser/
+│
+├── agents/
+│   ├── error_agent.py
+│   ├── error_detector.py
+│   ├── error_email_agent.py
+│   ├── mail_agent.py
+│   └── summarize_agent.py
+│
+├── workflow/
+│   ├── __init__.py
+│   └── ev_workflow.py
+│
+├── logs_data/
+│   ├── normal/
+│   │   └── normal_logs.csv
+│   └── error/
+│       └── error_logs.csv
+│
+├── docs/
+│   └── architecture.png
+│
+├── Charger_Logs_10.xlsx
+├── main.py
+├── scheduler.py
+├── logsfile_generator.py
+├── pyproject.toml
+├── requirements.txt
+├── uv.lock
+├── .gitignore
+├── .env.example
+└── README.md
+
+## Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Srikar282006/Logs-Automation.git
+cd Logs-Automation
+
+### 2. Create Enivornment
+
+```bash
+uv venv
+
+### 3. Activate the virtual environment
+
+```bash
+.venv\Scripts\activate
+
+### 4. Activate the virtual environment
+
+```bash
+.venv\Scripts\activate
+
+### 5. Installing packages
+
+```bash
+pip install -r requirements.txt
+
+## Running Application
+
+```bash
+uv run python main.py
+
+## Environment Variables
+GROQ_API_KEY=your_groq_api_key
+ERROR_LLM=your_error_llm_api_key
+EMAIL_ADDRESS=your_sender@gmail.com
+EMAIL_PASSWORD=your_google_app_password
+OWNER_EMAIL=owner@gmail.com
+
