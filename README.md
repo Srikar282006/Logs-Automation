@@ -49,6 +49,7 @@ flowchart TD
 
 
  📁 Project Structure
+```text
 Log_Analyser/
 │
 ├── agents/
