@@ -10,12 +10,12 @@ EV charging networks continuously generate operational telemetry and protocol me
 
 The system separates **fast, reliable detection** from **LLM-based reasoning**:
 
-- Python detects confirmed abnormal conditions.
-- LangGraph orchestrates the incident-analysis workflow.
-- An LLM converts a confirmed incident into a structured operational assessment.
-- A mail tool performs an external action when the incident is significant.
-- Normal logs are retained for operational analysis.
-- A scheduler generates a daily network summary automatically.
+* Python detects confirmed abnormal conditions.
+* LangGraph orchestrates the incident-analysis workflow.
+* An LLM converts a confirmed incident into a structured operational assessment.
+* A mail tool performs an external action when the incident is significant.
+* Normal logs are retained for operational analysis.
+* A scheduler generates a daily network summary automatically.
 
 The architecture is intentionally designed so that the current Excel-based prototype can later accept **live OCPP/CSMS data** without rebuilding the agent workflow.
 
@@ -24,7 +24,6 @@ The architecture is intentionally designed so that the current Excel-based proto
 ## Architecture
 
 ### High-level architecture
-
 
 ```mermaid
 flowchart TD
@@ -46,9 +45,10 @@ flowchart TD
     D --> K["12:00 AM Scheduler"]
     K --> L["Daily Summary Agent"]
     L --> M["Daily Email"]
+```
 
+## 📁 Project Structure
 
- 📁 Project Structure
 ```text
 Log_Analyser/
 │
@@ -82,6 +82,7 @@ Log_Analyser/
 ├── .gitignore
 ├── .env.example
 └── README.md
+```
 
 ## Setup
 
@@ -90,31 +91,38 @@ Log_Analyser/
 ```bash
 git clone https://github.com/Srikar282006/Logs-Automation.git
 cd Logs-Automation
+```
 
-### 2. Create Enivornment
+### 2. Create Environment
 
 ```bash
 uv venv
+```
 
 ### 3. Activate the virtual environment
 
-```bash
+```powershell
 .venv\Scripts\activate
+```
 
-### 4. Installing packages
+### 4. Install packages
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## Running Application
 
 ```bash
 uv run python main.py
+```
 
 ## Environment Variables
+
+```env
 GROQ_API_KEY=your_groq_api_key
 ERROR_LLM=your_error_llm_api_key
 EMAIL_ADDRESS=your_sender@gmail.com
 EMAIL_PASSWORD=your_google_app_password
 OWNER_EMAIL=owner@gmail.com
-
+```
